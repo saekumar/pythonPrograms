@@ -14,3 +14,5 @@ city = str(input("Enter the name of your city: "))
 
 twitterhandle = "@cyber" + pet
 print(f"Your new Twitter handle is {twitterhandle} from {city}")
+for i in range(1, 5):
+    print("helo")
