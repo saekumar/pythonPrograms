@@ -1,8 +1,26 @@
-# [print(ch + "") for ch in input("") if ch not in "aeiou"]
+import re
+
+print(["vowel" if ch in "aeiou" else "consonant" for ch in input("")])
 
 
-# li = [ch if ch not in "aeiou" else "k" for ch in "saikumar"]
-# print(li)
+# def check(n):
+#     sum = 0
+#     while n > 0:
+#         sum += n % 10
+#         n //= 10
+#     return sum
 
 
-print([(ord(ch) - ord("a") + 1) if ch in "aeiou" else ch for ch in input("")])
+# def che(n):
+#     return sum(int(digit) for digit in str(n))
+
+
+def onlyChars(s):
+    res = re.sub(r"[]", "", s)
+    print(res)
+
+
+# res = che(2245)
+# print(res)
+
+onlyChars("Hello123!@# World456$%^")
